@@ -4,8 +4,13 @@ import java.util.Scanner;
 
 public class apples {
     public static void main(String[] args){
-        System.out.print("Enter your line: ");
         Scanner bucky = new Scanner(System.in);
-        System.out.println(bucky.nextLine());
+        double f_num, s_num, answer;
+        System.out.print("Enter the first num: ");
+        f_num = bucky.nextDouble();
+        System.out.print("Enter the Second num: ");
+        s_num = bucky.nextDouble();
+        answer = f_num + s_num;
+        System.out.print(answer);
     }
 }
