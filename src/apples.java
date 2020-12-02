@@ -1,15 +1,10 @@
 package src;
 
-import java.util.Scanner;
-
 public class apples{
     public static void main(String[] args){
-        Scanner input = new Scanner(System.in);
-        tuna tunaObject = new tuna();
-
-        System.out.println("Enter name of first gf here: ");
-        String temp = input.nextLine();
-        tunaObject.setName(temp);
+        tuna tunaObject = new tuna("Kelsey");
+        tuna tunaObject2 = new tuna("Nicole");
         tunaObject.saying();
+        tunaObject2.saying();
     }
 }
