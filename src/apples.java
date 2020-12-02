@@ -1,4 +1,5 @@
 package src;
+
 import java.util.Scanner;
 
 public class apples{
@@ -6,8 +7,9 @@ public class apples{
         Scanner input = new Scanner(System.in);
         tuna tunaObject = new tuna();
 
-        System.out.println("Enter your name: ");
-        String name = input.nextLine();
-        tunaObject.simpleMessage(name);
+        System.out.println("Enter name of first gf here: ");
+        String temp = input.nextLine();
+        tunaObject.setName(temp);
+        tunaObject.saying();
     }
 }
