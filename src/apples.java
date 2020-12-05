@@ -2,13 +2,13 @@ package src;
 
 public class apples{
     public static void main(String[] args){
-        System.out.println("======== Start from 1 and increment by 1 ========");
-        for (int counter=1; counter<=10; counter++){
-            System.out.println(counter);
-        }
-        System.out.println("======== Start from 3 and increment by 3 ========");
-        for (int counter=3; counter<=21; counter+=3){
-            System.out.println(counter);
+        double amount;
+        double principal=10000;
+        double rate=.01;
+
+        for (int day=1; day<=20; day++){
+            amount = principal*Math.pow(1+rate, day);
+            System.out.println("Day "+day+": "+amount);
         }
     }
 }
