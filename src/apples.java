@@ -2,13 +2,11 @@ package src;
 
 public class apples{
     public static void main(String[] args){
-        double amount;
-        double principal=10000;
-        double rate=.01;
-
-        for (int day=1; day<=20; day++){
-            amount = principal*Math.pow(1+rate, day);
-            System.out.println("Day "+day+": "+amount);
-        }
+        int counter = 0; // try number 10 and 15 also
+        // do-while executes at least once before checking the condition
+        do{
+            System.out.println(counter);
+            counter++;
+        }while(counter<=10);
     }
 }
