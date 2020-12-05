@@ -1,21 +1,14 @@
 package src;
-import java.util.Scanner;
 
 public class apples{
     public static void main(String[] args){
-        int total = 0;
-        int grade;
-        int average;
-        int counter = 0;
-        Scanner input = new Scanner(System.in);
-
-        System.out.println("Enter the 10 numbers:");
-        while (counter < 10){
-            grade = input.nextInt();
-            total += grade;
-            counter++;
+        System.out.println("======== Start from 1 and increment by 1 ========");
+        for (int counter=1; counter<=10; counter++){
+            System.out.println(counter);
         }
-        average = total/10;
-        System.out.println("Your average is: "+average);
+        System.out.println("======== Start from 3 and increment by 3 ========");
+        for (int counter=3; counter<=21; counter+=3){
+            System.out.println(counter);
+        }
     }
 }
