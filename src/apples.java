@@ -1,17 +1,19 @@
 package src;
-import java.util.Random;
 
 public class apples{
     public static void main(String[] args){
-        Random dice = new Random();
-        int number;
+        // We'll discuss two ways to create arrays
 
-        for (int counter=0; counter<=10; counter++){
-            number = 1 + dice.nextInt(6);
-            // The argument (6) signifies the boundary.
-            // Here, it means consider (first six) random numbers starting from (zero).
-            // We add (one) because random numbers are generated from 0 to 5. So we push the generated number by 1.
-            System.out.println(number);
-        }
+        // Way 1: Using indexes
+        int[] bucky = new int[10];
+        bucky[0] = 87;
+        bucky[1] = 543;
+        bucky[9] = 65;
+        System.out.println(bucky[1]);
+
+        // Way2: Using array initializer
+        int[] tuna = {2, 4, 5, 7, 9};
+        System.out.println(tuna[2]);
+
     }
 }
