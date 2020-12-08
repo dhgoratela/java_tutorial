@@ -2,18 +2,12 @@ package src;
 
 public class apples{
     public static void main(String[] args){
-        // We'll discuss two ways to create arrays
+        int[] bucky = {32, 12, 18, 54, 2};
 
-        // Way 1: Using indexes
-        int[] bucky = new int[10];
-        bucky[0] = 87;
-        bucky[1] = 543;
-        bucky[9] = 65;
-        System.out.println(bucky[1]);
+        System.out.println("Index\tValue");
 
-        // Way2: Using array initializer
-        int[] tuna = {2, 4, 5, 7, 9};
-        System.out.println(tuna[2]);
-
+        for(int counter=0; counter<bucky.length; counter++){
+            System.out.println(counter+"\t"+bucky[counter]);
+        }
     }
 }
