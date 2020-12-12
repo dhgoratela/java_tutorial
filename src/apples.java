@@ -3,12 +3,15 @@ package src;
 public class apples {
     public static void main(String[] args){
         int[] bucky = {3, 4, 5, 6, 7};
-        int total = 0;
-
-        for (int x: bucky){
-            total+=x;
+        change(bucky);
+        for (int y: bucky){
+            System.out.println(y);
         }
+    }
 
-        System.out.println(total);
+    public static void change(int[] x){
+        for (int counter=0; counter<x.length; counter++){
+           x[counter]+=5;
+        }
     }
 }
