@@ -2,16 +2,7 @@ package src;
 
 public class apples {
     public static void main(String[] args){
-        int[] bucky = {3, 4, 5, 6, 7};
-        change(bucky);
-        for (int y: bucky){
-            System.out.println(y);
-        }
-    }
-
-    public static void change(int[] x){
-        for (int counter=0; counter<x.length; counter++){
-           x[counter]+=5;
-        }
+        int[][] firstArray = {{8, 9, 10, 11}, {12, 13, 14, 15}};
+        int[][] secondArray = {{30, 31, 32, 33}, {43}, {4, 5, 6}};
     }
 }
