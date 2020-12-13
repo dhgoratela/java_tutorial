@@ -1,14 +1,17 @@
 package src;
 
 public class tuna {
-    private int hour;
-    private int minutes;
-    private int seconds;
+    private int hour=1;
+    private int minutes=2;
+    private int seconds=3;
 
-    public void setTime(int h, int m, int s) {
-        hour = ((h>=0 && h<24) ? h: 0);
-        minutes = ((m>=0 && m<60) ? m: 0);
-        seconds = ((s>=0 && s<60) ? s: 0);
+    public void setTime(int hour, int minutes, int seconds) {
+        // you have to use "this" because your formal arguments are named the same as attributes of the tuna class.
+        // It wouldn't make any sense to write hour=hour.
+        // The only way to access your private attributes in these situations is to use "this"
+        this.hour = hour;
+        this.minutes = minutes;
+        this.seconds = seconds;
     }
 
     public String toMilitary() {
