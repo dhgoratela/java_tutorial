@@ -1,9 +1,8 @@
 package src;
 
 public class apples {
-    public static void main (String[] args) {
-        potpie potpieObject = new potpie(4, 5, 6);
-        tuna tunaObject = new tuna("Bucky", potpieObject);
-        System.out.println(tunaObject);
+    public static void main(String[] args) {
+        for(tuna people: tuna.values())
+            System.out.printf("%s\t%s\t%s\n", people, people.getDesc(), people.getYear());
     }
 }
