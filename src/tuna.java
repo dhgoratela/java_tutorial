@@ -1,19 +1,22 @@
 package src;
 
-public enum tuna{
-    bucky("Nice", "22"),
+public enum tuna {
+    bucky("nice", "22"),
     kelsey("cutie", "10"),
-    julia("bigmistake", "12");
+    julia("bigmistake", "12"),
+    nicole("italian", "13"),
+    candy("different", "14"),
+    erin("iwish", "16");
 
     private final String desc;
     private final String year;
 
     tuna(String description, String birthday){
         desc = description;
-        year = birthday;
+        year= birthday;
     }
 
-    public String getDesc() {
+    public String getDesc(){
         return desc;
     }
 
